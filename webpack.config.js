@@ -34,6 +34,7 @@ module.exports = [
     mode: 'production',
     entry: {
       'index': './src/assets/index/scss/index.scss',
+      'zhning12': './src/assets/mdnice/zhning12/scss/index.scss',
     },
     resolve: {
       extensions: ['.scss'],
