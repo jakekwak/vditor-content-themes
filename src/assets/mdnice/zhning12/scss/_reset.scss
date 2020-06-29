@@ -11,38 +11,218 @@
       line-height: 16px;
     }
 
-    color: #24292e;
-    font-variant-ligatures: no-common-ligatures;
-    font-family: $font-family-base;
-    word-wrap: break-word;
-    overflow: auto;
-    line-height: 1.5;
+    max-width: 860px;
     font-size: 16px;
+    color: black;
+    padding: 0 10px;
+    line-height: 1.6;
+    word-spacing: 0px;
+    letter-spacing: 0px;
     word-break: break-word;
+    word-wrap: break-word;
+    text-align: left;
+    font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-    ul ul ul {
-      list-style-type: square;
+    p {
+      font-size: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin: 0;
+      line-height: 26px;
+      color: black;
     }
 
-    ul ul {
-      list-style-type: circle;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding: 0px;
+      font-weight: bold;
+      color: black;
+
+      &:hover .vditor-anchor svg {
+        visibility: visible;
+      }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      border-bottom: 2px solid rgb(239, 112, 96);
+    }
+
+    h2 .content {
+      display: inline-block;
+      font-weight: bold;
+      background: rgb(239, 112, 96);
+      color: #ffffff;
+      padding: 3px 10px 1px;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      margin-right: 3px;
+     }
+     h2:after {
+      display: inline-block;
+      content: "";
+      vertical-align: bottom;
+      border-bottom: 36px solid #efebe9;
+      border-right: 20px solid transparent;
+     }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+    }
+
+    ul,
+    ol {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding-left: 25px;
+      color: black;
     }
 
     ul {
       list-style-type: disc;
     }
-
-    ul,
-    ol {
-      padding-left: 2em;
-      margin-top: 0;
-      margin-bottom: 16px;
+    
+    ul ul {
+      list-style-type: circle;
     }
+    
+    ul ul ul {
+      list-style-type: square;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    li section {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      line-height: 26px;
+      text-align: left;
+      color: rgb(1,1,1); 
+      font-weight: 500;
+    }
+
 
     li + li {
       margin-top: 0.25em;
     }
+    
+    blockquote {
+      display: block;
+      font-size: 0.9em;
+      overflow: auto;
+      overflow-scrolling: touch;
+      border-left: 3px solid rgb(239, 112, 96);
+      color: #6a737d;
+      padding: 10px 10px 10px 20px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      background: #fff9f9;
 
+      & > :first-child {
+        margin-top: 0
+      }
+
+      & > :last-child {
+        margin-bottom: 0
+      }
+    }
+
+    blockquote p {
+      margin: 0px;
+      color: black;
+      line-height: 26px;
+    }
+
+    a {
+      text-decoration: none;
+      word-wrap: break-word;
+      font-weight: bold;
+      // border-bottom: 1px solid #1e6bb8;
+      color: rgb(239, 112, 96);
+      // border-bottom: 1px solid rgb(239, 112, 96);
+    }
+
+    p code,
+    li code {
+      font-size: 14px;
+      word-wrap: break-word;
+      padding: 2px 4px;
+      border-radius: 4px;
+      margin: 0 2px;
+      color:  rgb(239, 112, 96);;
+      background-color: rgba(27,31,35,.05);
+      font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+      word-break: break-all;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    img.emoji {
+      cursor: auto;
+      max-width: 20px;
+      vertical-align: sub;
+    }
+
+    table {
+      display: table;
+      text-align: left;
+
+      tr {
+        border: 0;
+        border-top: 1px solid #ccc;
+        background-color: white;
+      }
+
+      tr th,
+      tr td {
+        font-size: 16px;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        text-align: left;
+      }
+
+      tr th {
+        font-weight: bold;
+        background-color: #f0f0f0;
+      }
+
+      tbody tr:nth-child(2n) {
+        background-color: #F8F8F8;
+      }
+    }
+
+    span code, #write li code {
+      color: rgb(239, 112, 96);
+    }
+    
     audio {
       max-width: 100%;
 
@@ -56,60 +236,6 @@
       max-width: 100%;
     }
 
-    img {
-      max-width: 100%;
-    }
-
-    img.emoji {
-      cursor: auto;
-      max-width: 20px;
-      vertical-align: sub;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin-top: 24px;
-      margin-bottom: 16px;
-      font-weight: 600;
-      line-height: 1.25;
-
-      &:hover .vditor-anchor svg {
-        visibility: visible;
-      }
-    }
-
-    h1 {
-      padding-bottom: 0.3em;
-      font-size: 1.75em;
-      border-bottom: 1px solid #eaecef;
-    }
-
-    h2 {
-      padding-bottom: 0.3em;
-      font-size: 1.55em;
-      border-bottom: 1px solid #eaecef;
-    }
-
-    h3 {
-      font-size: 1.38em;
-    }
-
-    h4 {
-      font-size: 1.25em
-    }
-
-    h5 {
-      font-size: 1.13em;
-    }
-
-    h6 {
-      font-size: 1em;
-    }
-
     hr {
       height: 2px;
       padding: 0;
@@ -118,25 +244,6 @@
       border: 0;
     }
 
-    p {
-      margin-top: 0;
-      margin-bottom: 16px;
-    }
-
-    blockquote {
-      padding: 0 1em;
-      color: #6a737d;
-      border-left: 0.25em solid #eaecef;
-      margin: 0 0 16px 0;
-
-      & > :first-child {
-        margin-top: 0
-      }
-
-      & > :last-child {
-        margin-bottom: 0
-      }
-    }
 
     ins > iframe {
       border: 0;
@@ -153,33 +260,6 @@
       }
     }
 
-    table {
-      border-collapse: collapse;
-      empty-cells: show;
-      margin-bottom: 16px;
-      overflow: auto;
-      border-spacing: 0;
-
-      tr {
-        background-color: #fafbfc;
-        border-top: 1px solid #c6cbd1;
-      }
-
-      td,
-      th {
-        padding: 6px 13px;
-        border: 1px solid #dfe2e5;
-        word-break: normal;
-      }
-
-      th {
-        font-weight: 600;
-      }
-
-      tbody tr:nth-child(2n) {
-        background-color: #fff;
-      }
-    }
 
     code:not(.hljs):not(.highlight-chroma) {
       padding: 0.2em 0.4em;
